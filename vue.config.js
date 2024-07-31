@@ -4,6 +4,7 @@ const AutoImport = require('unplugin-auto-import/webpack')
 const { VarletUIResolver } = require('unplugin-vue-components/resolvers')
 
 module.exports = defineConfig({
+  lintOnSave: false,
   transpileDependencies: true,
   css: {
     loaderOptions: {

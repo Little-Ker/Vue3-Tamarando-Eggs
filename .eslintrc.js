@@ -16,6 +16,7 @@ module.exports = {
   'extends': ['plugin:vue/vue3-recommended', 'prettier'],
   rules: {
     indent: [2, 2], // 縮排規則，index[0] 的數字代表含意為 關閉(0), 警告(1), 錯誤(2)
+    'vue/multi-word-component-names': 'off',
     'no-unused-vars': [
       'warn',
       {

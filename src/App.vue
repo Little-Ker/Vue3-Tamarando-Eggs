@@ -1,9 +1,11 @@
 <template>
     <div>
-        <Button @click="handleClick">Test</Button>
-        <div class="view">
-            <router-view />
-        </div>
+        <!-- <Button @click="handleClick">Test</Button> -->
+        <!-- <div class="view"> -->
+        <router-view />
+
+        <router-link to="about">ABOUT</router-link>
+        <!-- </div> -->
     </div>
 </template>
 
@@ -53,7 +55,7 @@ export default {
   width: 100%
   +desktop
     // background: #aaa
-    +set-flex(center, center)
+    // +set-flex(center, center)
   .view
     width: calc(100% - 260px)
     min-height: 100vh
